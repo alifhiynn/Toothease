@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document History Appointment</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    
+    <!--Navbar link-->
+    <nav class="navbar">
+        <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="info.html">INFO</a></li>
+        <li><a href="book.html">BOOK APPOINTMENT</a></li>
+        <li><a href="history.html">APPOINTMENT HISTORY</a></li>
+    </ul>
+    </nav>
+
+    <!--Header or Tajuk-->
+    <h2>APPOINTMENT HISTORY</h2>
+    
+<!----Table Appointment-->
+    <table id="Appointment-Table">
+        <thead>
+            <tr>
+                <th>DATE</th>
+                <td>20-Apr-2025</td>
+                <td>15-May-2025</td>
+                </tr>
+
+                <tr>
+                <th>TIME</th>
+                <td>9:00 AM</td>
+                <td>2:00 PM</td>
+                </tr>
+
+                <tr>
+                <th>TREATMENT</th>
+                <td>SCALING</td>
+                <td>TOOTH EXTRACTION</td>
+                </tr>
+
+                <tr>
+                <th>STATUS</th>
+                <td>DONE</td>
+                <td>UPCOMING</td>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <!---Appointment entries will be appear here-->
+        </tbody>
+    </table>
+
+    <!----NOTE to patient-->
+    <p><strong style="color: red;">NOTE:</strong></p>
+        PLEASE ARRIVE 5 - 10 MINUTES EARLY FOR UPCOMING APPOINTMENTS.
+        THANK YOU
+    
+    
+
+   
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+ <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            //document.getElementById
+            event.preventDefault();
+
+            const row =document.createElement("tr");
+            row.innerHTML = `
+            <td>${app.date}</td>
+            <td>${app.time}</td>
+            <td>${app.treatment}</td>
+            <td class="${app.status === 'DONE' ? 'done' : 'upcoming'}">
+          ${app.status}
+        </td>            `;
+
+            const APPOINTMENTS = [
+                {
+                    date: "20-Apr-2025",
+                    time: "9:00 AM",
+                    treatment: "SCALING",
+                    status: "DONE"
+                },
+                {
+                    date: "15-May-2025",
+                    time: "2:00 PM",
+                    treatment: "TOOTH EXTRACTION",
+                    status: "UPCOMING"
+                },
+            ];
+
+            const tableBody = document.querySelector("#appointmentTable tbody");
+
+            appointments.forEach(app => {
+            const row = document.createElement("tr");
+
+            tableBody.appendChild(row);
+
+        });
+    });
+    </script> -->
